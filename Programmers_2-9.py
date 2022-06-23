@@ -4,16 +4,14 @@ def solution(prices):
     while prices:
         cnt = 0
         pri = prices.pop(0)
-        if len(prices) == 0:
-            answer.append(0)
-            
+
         for i in prices:
-            if prices and pri <= i:
-                cnt += 1
-            else:
-                cnt += 1
+            cnt += 1
+            if pri > i:
                 break
-            
-        if cnt:
-            answer.append(cnt)
+
+        answer.append(cnt)
     return answer
+
+a = [1, 2, 3, 2, 3]
+print(solution(a))
