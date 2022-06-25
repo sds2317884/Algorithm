@@ -17,4 +17,4 @@ def solution(answers):
         if v == max(score):
             result.append(i+1)
     
-    return resul
+    return result
